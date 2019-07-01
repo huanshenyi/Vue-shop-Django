@@ -1,6 +1,9 @@
-userのモデルを作る時に
+# userのモデルを作る時に
 from django.contrib.auth.models import AbstractUser
 AbstractUserを上書きして作る
 settingsに
 AUTH_USER_MODEL = "users.UserProfile"
 
+
+# ユーザーモデルと関連する時に使う
+from django.contrib.auth import get_user_model
