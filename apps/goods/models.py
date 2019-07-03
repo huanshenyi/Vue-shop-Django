@@ -17,8 +17,8 @@ class GoodsCategory(models.Model):
     name = models.CharField(default="", max_length=50, verbose_name="カテゴリー名", help_text="カテゴリー名")
     # 英語で商品検索する時に使用
     code = models.CharField(default="", max_length=30, verbose_name="カテゴリーコード", help_text="カテゴリーコード")
-    desc = models.CharField(default="", verbose_name="カテゴリー説明", help_text="カテゴリー説明")
-    category_type = models.CharField(choices=CATEGORY_TYPE, verbose_name="カテゴリーレベル", help_text="カテゴリーレベル")
+    desc = models.TextField(default="", verbose_name="カテゴリー説明", help_text="カテゴリー説明")
+    category_type = models.IntegerField(choices=CATEGORY_TYPE, verbose_name="カテゴリーレベル", help_text="カテゴリーレベル")
     # 無限カテゴリーテーブルの自分との関連
     parent_category = models.ForeignKey("self", null=True, blank=True, verbose_name="親カテゴリー", help_text="親カテゴリー",
                                         on_delete=models.CASCADE, related_name="sub_cat")
@@ -58,7 +58,7 @@ class Goods(models.Model):
     category = models.ForeignKey(GoodsCategory, null=True, blank=True,
                                  verbose_name="商品カテゴリー", on_delete=models.CASCADE)
     goods_sn = models.CharField(max_length=50, default="", verbose_name="商品識別番号")
-    name = models.CharField(max_length=300, verbose_name="商品名")
+    name = models.CharField(max_length=100, verbose_name="商品名")
     click_num = models.IntegerField(default=0, verbose_name="クリック数")
     # 販売数
     sold_num = models.IntegerField(default=0, verbose_name="販売数")
@@ -100,11 +100,12 @@ class GoodsImage(models.Model):
     def __str__(self):
         return self.goods.name
 
+
 class Banner(models.Model):
     """
     swiper用の商品image
     """
-    goods = models.ForeignKey(Goods, verbose_name="商品")
+    goods = models.ForeignKey(Goods, verbose_name="商品", on_delete=models.CASCADE)
     image = models.ImageField(upload_to="banner", verbose_name="ホームページswiper用画像")
     index = models.IntegerField(default=0, verbose_name="swiper順番")
     add_time = models.DateTimeField(default=datetime.now, verbose_name="挿入時間")
@@ -115,3 +116,31 @@ class Banner(models.Model):
 
     def __str__(self):
         return self.goods.name
+
+
+class IndexAd(models.Model):
+    category = models.ForeignKey(GoodsCategory, related_name="category", verbose_name="商品カテゴリー", on_delete=models.CASCADE)
+    goods = models.ForeignKey(Goods, related_name='goods', on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name = "ホームページ商品カテゴリー広告"
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return self.goods.name
+
+
+class HotSearchWords(models.Model):
+    """
+    人気キーワード
+    """
+    keywords = models.CharField(default="", max_length=20, verbose_name="人気キーワード")
+    index = models.IntegerField(default=0, verbose_name="並び順")
+    add_time = models.DateTimeField(default=datetime.now, verbose_name="挿入時間")
+
+    class Meta:
+        verbose_name = "人気キーワード"
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return self.keywords
