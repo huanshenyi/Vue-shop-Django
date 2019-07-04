@@ -19,7 +19,7 @@ class UserProfile(AbstractUser):
 
     class Meta:
         verbose_name = "ユーザー"
-        verbose_name_plural = "ユーザー"
+        verbose_name_plural = verbose_name
 
     def __str__(self):
         return self.name

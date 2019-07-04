@@ -7,3 +7,7 @@ AUTH_USER_MODEL = "users.UserProfile"
 
 # ユーザーモデルと関連する時に使う
 from django.contrib.auth import get_user_model
+
+
+#xadminのモデルモジュールの表示ネーム
+apps.pyにverbose_name="設定したいネーム"

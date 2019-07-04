@@ -18,6 +18,7 @@ class ShoppingCart(models.Model):
     class Meta:
         verbose_name = "ショッピングカート"
         verbose_name_plural = verbose_name
+        unique_together = ("user", "goods")
 
     def __str__(self):
         return "%s(%d)".format(self.goods.name, self.goods_num)
@@ -41,7 +42,6 @@ class OrderInfo(models.Model):
     post_script = models.CharField(max_length=200, verbose_name="注文コメント")
     order_mount = models.FloatField(default=0.0, verbose_name="注文金額")
     pay_time = models.DateTimeField(null=True, blank=True, verbose_name="支払い時間")
-    # ユーザーのデータ
     address = models.CharField(max_length=100, default="", verbose_name="届出先")
     signer_name = models.CharField(max_length=20, default="", verbose_name="受取人")
     singer_mobile = models.CharField(max_length=20, verbose_name="連絡先")
@@ -58,7 +58,7 @@ class OrderGoods(models.Model):
     """
     注文の商品詳細
     """
-    order = models.ForeignKey(OrderInfo, on_delete=models.CASCADE, verbose_name="注文詳細")
+    order = models.ForeignKey(OrderInfo, on_delete=models.CASCADE, verbose_name="注文詳細", related_name="goods")
     goods = models.ForeignKey(Goods, on_delete=models.CASCADE, verbose_name="商品")
     goods_num = models.IntegerField(default=0, verbose_name="商品数")
     add_time = models.DateTimeField(default=datetime.now, verbose_name="挿入時間")

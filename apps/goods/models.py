@@ -41,12 +41,13 @@ class GoodsCategoryBrand(models.Model):
                                  verbose_name="商品カテゴリー名", on_delete=models.CASCADE)
     name = models.CharField(default="", max_length=30, verbose_name="ブランド名", help_text="ブランド名")
     desc = models.CharField(default="", max_length=200, verbose_name="ブランド説明", help_text="ブランド説明")
-    image = models.ImageField(max_length=200, upload_to="brand/images/")
+    image = models.ImageField(max_length=200, upload_to="brand/")
     add_time = models.DateTimeField(default=datetime.now, verbose_name="挿入時間")
 
     class Meta:
         verbose_name = "ブランド"
         verbose_name_plural = verbose_name
+        db_table = "goods_goodsbrand"
 
     def __str__(self):
         return self.name
@@ -60,11 +61,9 @@ class Goods(models.Model):
     goods_sn = models.CharField(max_length=50, default="", verbose_name="商品識別番号")
     name = models.CharField(max_length=100, verbose_name="商品名")
     click_num = models.IntegerField(default=0, verbose_name="クリック数")
-    # 販売数
     sold_num = models.IntegerField(default=0, verbose_name="販売数")
     fav_num = models.IntegerField(default=0, verbose_name="お気に入り登録数")
     goods_num = models.IntegerField(default=0, verbose_name="在庫数")
-    # 値段
     market_price = models.FloatField(default=0, verbose_name="原価")
     shop_price = models.FloatField(default=0, verbose_name="販売値段")
     goods_brief = models.TextField(max_length=500, verbose_name="商品説明")
@@ -90,7 +89,6 @@ class GoodsImage(models.Model):
     """
     goods = models.ForeignKey(Goods, verbose_name="商品", related_name="images", on_delete=models.CASCADE)
     image = models.ImageField(upload_to="", verbose_name="画像", null=True, blank=True)
-    image_url = models.CharField(max_length=300, null=True, blank=True, verbose_name="画像url")
     add_time = models.DateTimeField(default=datetime.now, verbose_name="挿入時間")
 
     class Meta:

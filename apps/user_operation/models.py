@@ -58,7 +58,9 @@ class UserAddress(models.Model):
     ユーザーお届け先
     """
     user = models.ForeignKey(User, verbose_name="ユーザー", on_delete=models.CASCADE)
-    district = models.CharField(max_length=100, default="", verbose_name="地域")
+    district = models.CharField(max_length=100, default="", null=True, blank=True,  verbose_name="地域")
+    province = models.CharField(max_length=100, default="", null=True, blank=True, verbose_name="県")
+    city = models.CharField(max_length=100, default="", verbose_name="city")
     address = models.CharField(max_length=100, default="", verbose_name="お届け先住所")
     signer_name = models.CharField(max_length=100, default="", verbose_name="受取人名前")
     signer_mobile = models.CharField(max_length=20, default="", verbose_name="受取人番号")
