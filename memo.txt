@@ -11,3 +11,12 @@ from django.contrib.auth import get_user_model
 
 #xadminのモデルモジュールの表示ネーム
 apps.pyにverbose_name="設定したいネーム"
+
+#localのimgのpath
+settings.py
+   MEDIA_URL = "/media/"
+   MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+ url.py
+    from django.views.static import serve
+    url(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),

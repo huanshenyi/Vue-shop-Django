@@ -476,7 +476,7 @@ model</ColNames>
       <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="121" parent="15" name="goods_goodscategorybrand_category_id_528934b3">
+    <index id="121" parent="15" name="goods_goodsbrand_category_id_6fc84a73">
       <ColNames>category_id</ColNames>
       <ColumnCollations></ColumnCollations>
     </index>

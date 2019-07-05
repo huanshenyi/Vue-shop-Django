@@ -41,7 +41,7 @@ class GoodsCategoryBrand(models.Model):
                                  verbose_name="商品カテゴリー名", on_delete=models.CASCADE)
     name = models.CharField(default="", max_length=30, verbose_name="ブランド名", help_text="ブランド名")
     desc = models.CharField(default="", max_length=200, verbose_name="ブランド説明", help_text="ブランド説明")
-    image = models.ImageField(max_length=200, upload_to="brand/")
+    image = models.ImageField(max_length=200, upload_to="brands/")
     add_time = models.DateTimeField(default=datetime.now, verbose_name="挿入時間")
 
     class Meta:

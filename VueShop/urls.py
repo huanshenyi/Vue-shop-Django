@@ -15,7 +15,12 @@ Including another URLconf
 """
 # from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url
 import xadmin
+from VueShop.settings import MEDIA_ROOT
+from django.views.static import serve
+
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),
+    url(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),
 ]
