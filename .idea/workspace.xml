@@ -2,86 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a36205d0-db83-47bc-923d-69ec4e8ad8c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/goods/migrations/0004_auto_20190705_2224.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db_tools/data/category_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db_tools/data/product_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db_tools/import_category_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db_tools/import_goods_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/lyfs-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/lyfs-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/scsg-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/scsg-2_G6LV34f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/scsg-2_s2g3L7M.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/scsg-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/sxsp-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/sxsp-1_HPZZvbI.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/sxsp-1_KDntI6h.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/sxsp-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/sxsp-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/sxsp-3_jG6lwp4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/sxsp-3_p6QnMEd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/10_P_1448944572085.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/11_P_1448944388277.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/12_P_1448947547989.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/13_P_1448947460386.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/14_P_1448947354031.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/15_P_1448947257324.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/16_P_1448947194687.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/17_P_1448947102246.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/18_P_1448947011435.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/19_P_1448946951581.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/1_P_1449024889889.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/20_P_1448946850602.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/21_P_1448946793276.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/22_P_1448946729629.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/23_P_1448948070348.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/24_P_1448948023823.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/25_P_1448947875346.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/26_P_1448947825754.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/27_P_1448947771805.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/28_P_1448947699948.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/29_P_1448947631994.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/2_20170719161405_249.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/2_20170719161414_628.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/2_20170719161435_381.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/2_P_1448945810202.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/30_P_1448948663450.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/31_P_1448948598947.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/32_P_1448948525620.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/33_P_1448948479966.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/34_P_1448948399009.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/35_P_1448948333610.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/36_P_1448948234405.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/37_P_1448949284365.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/38_P_1448949220255.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/39_P_1448949115481.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/3_P_1448945490837.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/40_P_1448949038702.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/41_P_1448948980358.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/42_P_1448948895193.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/43_P_1448948762645.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/44_P_1448948850187.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/45_P_1448946661303.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/46_P_1448946598711.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/47_P_1448946213263.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/48_P_1448943988970.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/49_P_1448162819889.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/4_P_1448945381985.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/50_P_1448946543091.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/51_P_1448946466595.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/53_P_1495068879687.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/5_P_1448945270390.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/6_P_1448945167279.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/7_P_1448945104883.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/8_P_1448945032810.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/9_P_1448944791617.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/生鲜_20170719161424_153.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/VueShop/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueShop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/VueShop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/goods/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/memo.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,31 +48,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="43" column="63" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db_tools/import_category_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-234">
-              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/memo.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+            <state relative-caret-position="450">
+              <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -157,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VueShop/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="2538">
               <caret line="142" selection-start-line="142" selection-end-line="143" selection-end-column="44" />
               <folding>
                 <element signature="e#306#315#0" expanded="true" />
@@ -169,8 +71,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VueShop/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="37" />
+            <state relative-caret-position="216">
+              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+              <folding>
+                <element signature="e#666#703#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="77">
+              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/goods/views_base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db_tools/data/product_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="324">
+              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -222,14 +156,16 @@
         <option value="$PROJECT_DIR$/db_tools/import_goods_data.py" />
         <option value="$PROJECT_DIR$/db_tools/data/product_data.py" />
         <option value="$PROJECT_DIR$/VueShop/settings.py" />
-        <option value="$PROJECT_DIR$/VueShop/urls.py" />
         <option value="$PROJECT_DIR$/memo.txt" />
+        <option value="$PROJECT_DIR$/VueShop/urls.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/apps/goods/views_base.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="369" />
-    <option name="y" value="37" />
+    <option name="y" value="36" />
     <option name="width" value="1731" />
     <option name="height" value="930" />
   </component>
@@ -239,7 +175,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,25 +185,19 @@
             <path>
               <item name="VueShop" type="b2602c69:ProjectViewProjectNode" />
               <item name="VueShop" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="VueShop" type="b2602c69:ProjectViewProjectNode" />
               <item name="VueShop" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="goods" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VueShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VueShop" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="goods" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,7 +205,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/db_tools" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -409,25 +338,28 @@
       <workItem from="1562146827132" duration="5759000" />
       <workItem from="1562152674904" duration="48000" />
       <workItem from="1562239541235" duration="4375000" />
-      <workItem from="1562332422516" duration="6200000" />
+      <workItem from="1562332422516" duration="6333000" />
+      <workItem from="1562383875875" duration="279000" />
+      <workItem from="1562384447211" duration="32000" />
+      <workItem from="1562405574206" duration="5608000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44037000" />
+    <option name="totallyTimeSpent" value="50089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18350849" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19320938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="aws.explorer" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.44680852" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38120568" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.23226951" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -443,7 +375,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.23039612" />
+      <window_info anchor="right" id="Database" order="4" weight="0.2166532" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,43 +549,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://009c9aa1-59e5-4ff6-bdc7-646a0d848e1d/schema/main/table/goods_goodscategory">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="696c313e-8542-4c2c-aea3-c6884514a287">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db_tools/data/category_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2070">
           <caret line="115" column="23" lean-forward="true" selection-start-line="115" selection-start-column="7" selection-end-line="115" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="43" column="63" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db_tools/import_category_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db_tools/data/product_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -677,9 +576,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/memo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/VueShop/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="2538">
           <caret line="142" selection-start-line="142" selection-end-line="143" selection-end-column="44" />
           <folding>
             <element signature="e#306#315#0" expanded="true" />
@@ -687,17 +593,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VueShop/urls.py">
+    <entry file="file://$PROJECT_DIR$/db_tools/import_category_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="37" />
+        <state relative-caret-position="450">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/memo.txt">
+    <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/python_env/Envs/VueShop/Lib/site-packages/django/db/models/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="-2293">
+          <caret line="392" column="6" selection-start-line="392" selection-start-column="6" selection-end-line="392" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://009c9aa1-59e5-4ff6-bdc7-646a0d848e1d/schema/main/table/goods_goodscategory">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="b361f137-ecf8-458d-85e3-56d094be6074">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://009c9aa1-59e5-4ff6-bdc7-646a0d848e1d/schema/main/table/goods_goods">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="b361f137-ecf8-458d-85e3-56d094be6074">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_tools/data/product_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VueShop/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <folding>
+            <element signature="e#666#703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1890" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/goods/views_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
