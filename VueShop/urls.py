@@ -15,16 +15,21 @@ Including another URLconf
 """
 # from django.contrib import admin
 from django.urls import path, re_path
-from django.conf.urls import url
+from django.conf.urls import url, include
 import xadmin
 from VueShop.settings import MEDIA_ROOT
 from django.views.static import serve
+from rest_framework.documentation import include_docs_urls
 
-from goods.views_base import GoodsListView
+# from goods.views_base import GoodsListView
+from goods.views import GoodsListView
 
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),
+    url(r'^api-auth/', include('rest_framework.urls')),
     re_path(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),
     # 商品リスト
-    re_path('goods/$', GoodsListView.as_view(), name="goods-list")
+    re_path('goods/$', GoodsListView.as_view(), name="goods-list"),
+    # drfのドキュメント
+    url(r'docs/', include_docs_urls(title="ドキュメント"))
 ]
