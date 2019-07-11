@@ -8,6 +8,7 @@ from .models import Goods
 from .serializers import GoodsSerializer
 from rest_framework.pagination import PageNumberPagination
 
+from rest_framework import viewsets
 
 # Create your views here.
 # ページング設定
@@ -18,7 +19,7 @@ class GoodsPagination(PageNumberPagination):
     # page_query_param = 'p'
 
 
-class GoodsListView(generics.ListAPIView):
+class GoodsListViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     """
     商品リストページ
     """
