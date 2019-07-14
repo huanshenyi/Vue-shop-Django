@@ -1,12 +1,11 @@
-from rest_framework.views import APIView
-from rest_framework.response import Response
 from rest_framework import mixins
-from rest_framework import generics
-from rest_framework import status
+
 
 from .models import Goods
 from .serializers import GoodsSerializer
 from rest_framework.pagination import PageNumberPagination
+from django_filters.rest_framework import DjangoFilterBackend
+from .filters import GoodsFilter
 
 from rest_framework import viewsets
 
@@ -26,7 +25,18 @@ class GoodsListViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     queryset = Goods.objects.all()
     serializer_class = GoodsSerializer
     pagination_class = GoodsPagination
+    filter_backends = (DjangoFilterBackend,)
+    filter_class = GoodsFilter
 
+    # 内容のフィルター追加 -->古い方式
+    # def get_queryset(self):
+    #     # querysetはsqlを作っただけで、実際取得までに行ってない,データの多さに気にすることはない
+    #     queryset = Goods.objects.all()
+    #     # フロントエンドからのパラメータを条件として,ここのgetはobject.get(key,default)
+    #     price_min = self.request.query_params.get("price_min", 0)
+    #     if price_min:
+    #         queryset = queryset.filter(shop_price__gt=int(price_min))
+    #     return queryset
 
 
     # def post(self, request, format=None):

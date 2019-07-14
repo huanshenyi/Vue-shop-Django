@@ -27,7 +27,7 @@ from goods.views import GoodsListViewSet
 
 router = DefaultRouter()
 # goodsのurl設定
-router.register(r'goods', GoodsListViewSet)
+router.register(r'goods', GoodsListViewSet, base_name="goods")
 
 
 urlpatterns = [
