@@ -23,11 +23,13 @@ from rest_framework.documentation import include_docs_urls
 
 from rest_framework.routers import DefaultRouter
 # from goods.views_base import GoodsListView
-from goods.views import GoodsListViewSet
+from goods.views import GoodsListViewSet, CategoryViewSet
 
 router = DefaultRouter()
 # goodsのurl設定
 router.register(r'goods', GoodsListViewSet, base_name="goods")
+# Categoryのurl設定
+router.register('categorys', CategoryViewSet, base_name="categorys")
 
 
 urlpatterns = [

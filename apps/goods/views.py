@@ -1,13 +1,14 @@
 from rest_framework import mixins
 
 
-from .models import Goods
-from .serializers import GoodsSerializer
+from .models import Goods, GoodsCategory
+from .serializers import GoodsSerializer,CategorySerializer
 from rest_framework.pagination import PageNumberPagination
 from django_filters.rest_framework import DjangoFilterBackend
 from .filters import GoodsFilter
 
 from rest_framework import viewsets
+from rest_framework import filters
 
 # Create your views here.
 # ページング設定
@@ -20,13 +21,26 @@ class GoodsPagination(PageNumberPagination):
 
 class GoodsListViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     """
-    商品リストページ
+    商品リストページ,ページング，サーチ、フィルター，並び順
     """
     queryset = Goods.objects.all()
     serializer_class = GoodsSerializer
     pagination_class = GoodsPagination
-    filter_backends = (DjangoFilterBackend,)
+    filter_backends = (DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter)
     filter_class = GoodsFilter
+    # https://www.django-rest-framework.org/api-guide/filtering/#djangofilterbackend
+    search_fields = ('name', 'goods_brief', 'goods_desc')
+    ordering_fields = ('sold_num', 'add_time')
+
+
+class CategoryViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
+    """
+    list:
+    商品分類リストデータ
+    """
+    queryset = GoodsCategory.objects.filter(category_type=1)
+    serializer_class = CategorySerializer
+
 
     # 内容のフィルター追加 -->古い方式
     # def get_queryset(self):
