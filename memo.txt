@@ -32,3 +32,6 @@ class BillingRecordsView(generics.ListAPIView):
     queryset = Billing.objects.all()
     serializer_class = BillingRecordsSerializer
     pagination_class = LargeResultsSetPagination
+
+# 跨域请求的问题
+https://blog.csdn.net/larger5/article/details/81265339
