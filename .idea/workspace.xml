@@ -3,9 +3,398 @@
   <component name="ChangeListManager">
     <list default="true" id="a36205d0-db83-47bc-923d-69ec4e8ad8c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/VueShop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/memo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/dist/index.entry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/dist/static/fonts/iconfont.60cf513.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/dist/static/fonts/iconfont.fcaaa27.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/dist/static/images/loginBg1.23c7104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/mock/mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/mock/mock/banner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/mock/mock/hotSearch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/mock/mock/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/mock/mock/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/mock/mock/newOpro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/mock/mock/seriesList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/npm-debug.log.2197190737" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/npm-debug.log.283254658" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/npm-debug.log.2984282014" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/npm-debug.log.903937481" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/proxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/api/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/api/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/axios/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/associateFile/associateFile.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/cloud-cooperation/cloud-cooperation.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/contextmenu/contextmenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/contextmenu/contextmenu.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/contextmenu/contextmenu2.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/contextmenu/eachContextmenuDom.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/contextmenu/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/control/control-bar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/current-loc/current-loc.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/drag/drag.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/layout/layout.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/list-nav/listNav.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/list-sort/images/search-page-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/list-sort/listSort.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/loading/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/loading/loading.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/loading2/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/loading2/loading.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/menu/menu-list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/nodata/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/nodata/nodata.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/page/page.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/price-range/images/search-page-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/price-range/priceRange.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/10_thumb_G_1448944572962.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/11_thumb_G_1448944388914.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/1460440720430642585.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/1_thumb_G_1449024889033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/2_thumb_G_1448945810147.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/3_thumb_G_1448945490826.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/47_thumb_G_1448946213633.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/4_thumb_G_1448945381841.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/6_thumb_G_1448945167914.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/7_thumb_G_1448945104346.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/8_thumb_G_1448945032585.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/9_thumb_G_1448944791708.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/ft-svr1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/ft-svr2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/ft-svr3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/ft-svr4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/gotop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/kefuweixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/nextpage-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/qq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/wangwang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/images/weixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/product-list/productList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/result-list/result-list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/common/tag/tag-filter.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/heighchart/bar/line-bar/line_bar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/components/heighchart/circle/circle/circle.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/router/getQueryString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/alipay.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/footer/ft-svr1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/footer/ft-svr2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/footer/ft-svr3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/footer/ft-svr4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/head/1449088788518670880.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/head/1449088848823694266.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/head/1449088901458193225.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/head/1449088957941770398.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/head/1449089137240745101.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/head/1449089235904530709.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/head/1449089297229428349.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/head/1449089358084135937.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/head/logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/head/logo2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/head/webintro-ico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/indexNew/1460440788951670189.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/indexNew/1_thumb_G_1449024889033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/indexNew/49_thumb_G_1448162819357.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/dig_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/loginBg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/other-login-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/send.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/slide_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/slide_l_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/slide_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/login/slide_r_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/loginHead/flow_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/loginHead/flow_logo.png-bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/loginHead/kong.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/loginHead/page-step-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/new/xinpin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/dig_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/loginBg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/send.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/slide_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/slide_l_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/slide_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/register/slide_r_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/10_thumb_G_1448944572962.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/11_thumb_G_1448944388914.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1447704649936189900.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1447704682791039878.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1447705943471297107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1447706000795527048.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1447706093179659152.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1447706126626614178.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1447706160927101013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1447706206565420819.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1449010433801562396.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1449010763793377576.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1449011954874068927.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/1449012797850565666.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/21_thumb_G_1448946793103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/22_thumb_G_1448946729918.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/24_thumb_G_1448948023508.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/25_thumb_G_1448947875633.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/26_thumb_G_1448947825794.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/27_thumb_G_1448947771206.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/28_thumb_G_1448947699187.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/29_thumb_G_1448947631664.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/31_thumb_G_1448948598408.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/32_thumb_G_1448948525255.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/33_thumb_G_1448948479944.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/34_thumb_G_1448948399017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/35_thumb_G_1448948333567.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/36_thumb_G_1448948234706.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/45_thumb_G_1448946661697.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/46_thumb_G_1448946598227.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/47_thumb_G_1448946213633.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/48_thumb_G_1448943988607.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/50_thumb_G_1448946542088.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/51_thumb_G_1448946466261.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/53_thumb_G_1495068879139.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/seriesList/9_thumb_G_1448944791708.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/shopHead/flow_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/shopHead/kong.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/shopHead/page-step-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/images/shopHead/webintro-ico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/js/clickoutside.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/js/cloneObject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/js/cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/js/meteor.exec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/vendors/iview/dist/iview.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/vendors/iview/dist/iview.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/vendors/iview/dist/styles/fonts/ionicons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/vendors/iview/dist/styles/fonts/ionicons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/vendors/iview/dist/styles/fonts/ionicons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/vendors/iview/dist/styles/fonts/ionicons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/static/vendors/iview/dist/styles/iview.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/store/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/store/getters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/store/mutation-types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/store/mutations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/store/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/styles/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/styles/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/styles/common.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/styles/confing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/demo_fontclass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/demo_symbol.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/demo_unicode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/iconfont.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/iconfont.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/styles/fonts/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/app/app.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/cart/cart.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/cart/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/cart/images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/footer/footer.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/footer/images/ft-svr1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/footer/images/ft-svr2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/footer/images/ft-svr3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/footer/images/ft-svr4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/head/head.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/head/shophead.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/home/home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/index/banners.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/index/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/index/new.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/index/series-list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/current-loc/current-loc.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/list-nav/listNav.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/list-sort/images/search-page-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/list-sort/listSort.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/page/page.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/price-range/images/search-page-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/price-range/priceRange.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/10_thumb_G_1448944572962.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/11_thumb_G_1448944388914.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/1460440720430642585.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/1_thumb_G_1449024889033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/2_thumb_G_1448945810147.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/3_thumb_G_1448945490826.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/47_thumb_G_1448946213633.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/4_thumb_G_1448945381841.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/6_thumb_G_1448945167914.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/7_thumb_G_1448945104346.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/8_thumb_G_1448945032585.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/9_thumb_G_1448944791708.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/ft-svr1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/ft-svr2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/ft-svr3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/ft-svr4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/gotop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/kefuweixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/nextpage-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/qq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/wangwang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/images/weixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/list/product-list/productList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/login/login.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/loginHead/loginHead.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/member/collection.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/member/member-menu.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/member/member.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/member/message.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/member/order.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/member/orderDetail.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/member/receive.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/member/userinfo.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/current-loc/current-loc.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/hotSales.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1(1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/10_thumb_G_1448944572962.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/11_thumb_G_1448944388914.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1460440720430642585.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/16_thumb_G_1448947194349.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_P_1449024889018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_P_1449024889264.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_P_1449024889287.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_P_1449024889726.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_P_1449024889889.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_G_1449024889033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_G_1449025104251.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_G_1449025115783.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_G_1449025126133.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_P_1449024889543.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_P_1449024889686.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_P_1449024889723.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_P_1449024889757.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/1_thumb_P_1449024889930.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/21_thumb_G_1448946793103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/30_thumb_G_1448948662661.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/33_thumb_G_1448948479944.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/34_thumb_G_1448948399017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/36_thumb_G_1448948234706.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/42_thumb_G_1448948895152.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/47_thumb_G_1448946213633.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/48_thumb_G_1448943988607.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/49_thumb_G_1448162819357.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/53_thumb_G_1495068879139.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/a6467458df916b1a7d2db267b0303c68_1_P_1449024889264.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/default_45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/e721c85cefe59b66b8845ae4f85990cb_1_P_1449024889726.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/footprint-arr (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/footprint-arr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/ft-svr1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/ft-svr2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/ft-svr3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/ft-svr4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/gotop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1(1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/10_thumb_G_1448944572962.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/11_thumb_G_1448944388914.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1460440720430642585.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/16_thumb_G_1448947194349.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_P_1449024889018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_P_1449024889264.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_P_1449024889287.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_P_1449024889726.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_P_1449024889889.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_G_1449024889033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_G_1449025104251.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_G_1449025115783.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_G_1449025126133.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_P_1449024889543.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_P_1449024889686.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_P_1449024889723.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_P_1449024889757.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/1_thumb_P_1449024889930.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/21_thumb_G_1448946793103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/30_thumb_G_1448948662661.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/33_thumb_G_1448948479944.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/34_thumb_G_1448948399017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/36_thumb_G_1448948234706.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/42_thumb_G_1448948895152.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/47_thumb_G_1448946213633.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/48_thumb_G_1448943988607.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/49_thumb_G_1448162819357.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/53_thumb_G_1495068879139.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/a6467458df916b1a7d2db267b0303c68_1_P_1449024889264.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/default_45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/e721c85cefe59b66b8845ae4f85990cb_1_P_1449024889726.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/footprint-arr (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/footprint-arr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/ft-svr1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/ft-svr2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/ft-svr3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/ft-svr4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/gotop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/kefuweixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/loading_nala.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/qq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/seemore-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/stars1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/stars2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/stars3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/stars4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/stars5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/wangwang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/weixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/images/zt_cart_bg05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/kefuweixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/loading_nala.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/qq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/seemore-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/stars1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/stars2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/stars3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/stars4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/stars5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/wangwang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/weixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/images/zt_cart_bg05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/model.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/productDetail/productDetail.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/src/views/register/register.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-store/webpack.prod.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +440,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VueShop/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="540">
               <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
               <folding>
                 <element signature="e#666#703#0" expanded="true" />
@@ -60,11 +449,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="35" column="72" selection-start-line="35" selection-start-column="72" selection-end-line="35" selection-end-column="72" />
+            <state relative-caret-position="612">
+              <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -87,8 +476,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/goods/filters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+            <state relative-caret-position="156">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
               <folding>
                 <element signature="e#90#111#0" expanded="true" />
               </folding>
@@ -99,8 +488,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1314">
-              <caret line="76" column="12" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="12" />
+            <state relative-caret-position="396">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="19" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -120,8 +509,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VueShop/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+            <state relative-caret-position="1746">
+              <caret line="97" selection-start-line="97" selection-end-line="97" />
               <folding>
                 <element signature="e#306#315#0" expanded="true" />
               </folding>
@@ -129,10 +518,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/memo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
+            <state relative-caret-position="630">
               <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
             </state>
           </provider>
@@ -179,12 +568,12 @@
         <option value="$PROJECT_DIR$/apps/goods/serializer.py" />
         <option value="$PROJECT_DIR$/apps/users/models.py" />
         <option value="$PROJECT_DIR$/viewsetmemo.txt" />
-        <option value="$PROJECT_DIR$/apps/goods/filters.py" />
         <option value="$PROJECT_DIR$/VueShop/urls.py" />
         <option value="$PROJECT_DIR$/apps/goods/serializers.py" />
-        <option value="$PROJECT_DIR$/apps/goods/views.py" />
         <option value="$PROJECT_DIR$/VueShop/settings.py" />
         <option value="$PROJECT_DIR$/memo.txt" />
+        <option value="$PROJECT_DIR$/apps/goods/filters.py" />
+        <option value="$PROJECT_DIR$/apps/goods/views.py" />
       </list>
     </option>
   </component>
@@ -200,7 +589,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,6 +611,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -230,6 +619,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -388,17 +778,24 @@
       <workItem from="1563287148776" duration="93000" />
       <workItem from="1563360989993" duration="618000" />
       <workItem from="1563370068986" duration="2214000" />
+      <workItem from="1563374484397" duration="94000" />
+      <workItem from="1563541603821" duration="815000" />
+      <workItem from="1563542479919" duration="630000" />
+      <workItem from="1563544531534" duration="20000" />
+      <workItem from="1563804153963" duration="1653000" />
+      <workItem from="1563877166802" duration="169000" />
+      <workItem from="1563882500597" duration="4777000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104920000" />
+    <option name="totallyTimeSpent" value="113078000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4929078" visible="true" weight="0.25707355" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4929078" visible="true" weight="0.16814874" />
       <window_info id="Structure" order="1" sideWeight="0.5070922" side_tool="true" weight="0.2287793" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="aws.explorer" order="3" side_tool="true" />
@@ -413,7 +810,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32978722" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.608156" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.42553192" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="manage.py@VueShop" order="13" weight="0.5425532" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32978722" />
@@ -432,13 +829,6 @@
     <SUITE FILE_PATH="coverage/VueShop$import_goods_data.coverage" NAME="import_goods_data Coverage Results" MODIFIED="1562338515010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/datetime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="1626" column="8" selection-start-line="1626" selection-start-column="8" selection-end-line="1626" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/php/config.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -736,12 +1126,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/online-store/src/views/head/head.vue" />
     <entry file="file://$PROJECT_DIR$/VueShop/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="540">
           <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
           <folding>
             <element signature="e#666#703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewsetmemo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VueShop/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1746">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+          <folding>
+            <element signature="e#306#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -758,55 +1183,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/goods/filters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        <state relative-caret-position="156">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding>
             <element signature="e#90#111#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1314">
-          <caret line="76" column="12" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/viewsetmemo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="35" column="72" selection-start-line="35" selection-start-column="72" selection-end-line="35" selection-end-column="72" />
+        <state relative-caret-position="612">
+          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VueShop/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
-          <folding>
-            <element signature="e#306#315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
         </state>
       </provider>
     </entry>
