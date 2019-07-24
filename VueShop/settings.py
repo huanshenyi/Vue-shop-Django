@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     'xadmin',
     'rest_framework',
     'corsheaders',
-    'django_filters'
+    'django_filters',
+    'rest_framework.authtoken'
 ]
 
 MIDDLEWARE = [
@@ -180,3 +181,11 @@ CORS_ALLOW_HEADERS = (
     'x-csrftoken',
     'x-requested-with',
 )
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication'
+    ]
+}
