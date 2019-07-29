@@ -33,7 +33,8 @@ router.register(r'goods', GoodsListViewSet, base_name="goods")
 # Categoryのurl設定
 router.register('categorys', CategoryViewSet, base_name="categorys")
 
-
+# jwt認証
+from rest_framework_jwt.views import obtain_jwt_token
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls')),
@@ -43,6 +44,8 @@ urlpatterns = [
     url(r'docs/', include_docs_urls(title="ドキュメント")),
 
     path('', include(router.urls)),
-
-    url(r'^api-token-auth/', views.obtain_auth_token)
+    # drf自分のtoken認証モード
+    url(r'^api-token-auth/', views.obtain_auth_token),
+    # jwt認証
+    url(r'^jwt_auth/', obtain_jwt_token),
 ]

@@ -1,4 +1,7 @@
 from rest_framework import mixins
+from rest_framework import viewsets
+from rest_framework import filters
+from rest_framework.authentication import TokenAuthentication
 
 
 from .models import Goods, GoodsCategory
@@ -7,8 +10,6 @@ from rest_framework.pagination import PageNumberPagination
 from django_filters.rest_framework import DjangoFilterBackend
 from .filters import GoodsFilter
 
-from rest_framework import viewsets
-from rest_framework import filters
 
 # Create your views here.
 # ページング設定
@@ -28,6 +29,7 @@ class GoodsListViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     queryset = Goods.objects.all()
     serializer_class = GoodsSerializer
     pagination_class = GoodsPagination
+    # authentication_classes = (TokenAuthentication, )
     filter_backends = (DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter)
     filter_class = GoodsFilter
     # https://www.django-rest-framework.org/api-guide/filtering/#djangofilterbackend
