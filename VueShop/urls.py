@@ -47,5 +47,5 @@ urlpatterns = [
     # drf自分のtoken認証モード
     url(r'^api-token-auth/', views.obtain_auth_token),
     # jwt認証
-    url(r'^jwt_auth/', obtain_jwt_token),
+    url(r'^login/', obtain_jwt_token),
 ]
