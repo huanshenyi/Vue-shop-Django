@@ -35,3 +35,8 @@ class BillingRecordsView(generics.ListAPIView):
 
 # 跨域请求的问题
 https://blog.csdn.net/larger5/article/details/81265339
+
+register(prefix, viewset, base_name)
+-prefix 该视图集的路由前缀
+-viewset 视图集
+-base_name 路由名称的前缀

@@ -26,12 +26,16 @@ from rest_framework.authtoken import views
 
 
 from goods.views import GoodsListViewSet, CategoryViewSet
+# お気に入り
+from user_operation.views import UserFavViewset
 
 router = DefaultRouter()
 # goodsのurl設定
 router.register(r'goods', GoodsListViewSet, base_name="goods")
 # Categoryのurl設定
 router.register('categorys', CategoryViewSet, base_name="categorys")
+# ユーザー操作のurl設定(お気に入り)
+router.register('userfavs', UserFavViewset, base_name="userfavs")
 
 # jwt認証
 from rest_framework_jwt.views import obtain_jwt_token

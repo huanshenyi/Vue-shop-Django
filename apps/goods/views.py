@@ -22,14 +22,14 @@ class GoodsPagination(PageNumberPagination):
     # page_query_param = 'p'
 
 
-class GoodsListViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
+class GoodsListViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     """
     商品リストページ,ページング，サーチ、フィルター，並び順
     """
     queryset = Goods.objects.all()
     serializer_class = GoodsSerializer
     pagination_class = GoodsPagination
-    # authentication_classes = (TokenAuthentication, )
+    # authentication_classes = (TokenAuthentication, ) goodsはログイン要らないのでなくていい
     filter_backends = (DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter)
     filter_class = GoodsFilter
     # https://www.django-rest-framework.org/api-guide/filtering/#djangofilterbackend
