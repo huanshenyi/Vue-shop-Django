@@ -12,7 +12,8 @@ class UserFav(models.Model):
     """
     ユーザーお気に入り
     """
-    user = models.ForeignKey(User, verbose_name="ユーザー", on_delete=models.CASCADE)
+    user = models.ForeignKey(User, verbose_name="ユーザー", on_delete=models.CASCADE, help_text="ユーザーid")
+    # help_text 商品id ApiDoc用
     goods = models.ForeignKey(Goods, verbose_name="商品", help_text="商品id", on_delete=models.CASCADE)
     add_time = models.DateTimeField(default=datetime.now, verbose_name="挿入時間")
 

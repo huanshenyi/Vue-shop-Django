@@ -8,9 +8,9 @@ class GoodsFilter(django_filters.rest_framework.FilterSet):
     """
     商品フィルタークラス
     """
-    pricemin = django_filters.NumberFilter(field_name="shop_price", lookup_expr='gte')
-    pricemax = django_filters.NumberFilter(field_name="shop_price", lookup_expr='lte')
-    topcategory = django_filters.NumberFilter(method="top_category_filter")
+    pricemin = django_filters.NumberFilter(field_name="shop_price", help_text='最低価格', lookup_expr='gte')
+    pricemax = django_filters.NumberFilter(field_name="shop_price", help_text='最高価格', lookup_expr='lte')
+    topcategory = django_filters.NumberFilter(method="top_category_filter", help_text='所属カテゴリー')
     # 曖昧捜査
     # name = django_filters.CharFilter(field_name='name', lookup_expr='icontains')
 

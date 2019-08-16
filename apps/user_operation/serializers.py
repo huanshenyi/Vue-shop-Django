@@ -7,7 +7,8 @@ from rest_framework.validators import UniqueTogetherValidator
 # https://www.django-rest-framework.org/api-guide/validators/#advanced-field-defaults
 class UserFavSeriallzer(serializers.ModelSerializer):
     user = serializers.HiddenField(
-        default=serializers.CurrentUserDefault()
+        default=serializers.CurrentUserDefault(),
+        help_text='ログインしてるユーザー'
     )
     class Meta:
         model = UserFav
