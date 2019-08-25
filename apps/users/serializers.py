@@ -36,6 +36,15 @@ class SmsSerializer(serializers.Serializer):
         return mobile
 
 
+class UserDetailSerializer(serializers.ModelSerializer):
+    """
+    user詳細表示用
+    """
+    class Meta:
+        model = User
+        fields = ("name", "gender", "birthday", "email", "mobile")
+
+
 class UserRegSerializer(serializers.ModelSerializer):
      # code = serializers.CharField(required=True, write_only=True, max_length=4, min_length=4,
      #                              error_messages={"required": "codeを入力してください",
