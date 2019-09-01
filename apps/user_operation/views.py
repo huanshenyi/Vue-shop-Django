@@ -6,7 +6,7 @@ from rest_framework.authentication import SessionAuthentication
 
 from .models import UserFav
 from utils.permissions import IsOwnerOrReadOnly
-from .serializers import UserFavSeriallzer
+from .serializers import UserFavSeriallzer, UserFavDetailSerializer
 
 
 class UserFavViewset(mixins.CreateModelMixin, mixins.DestroyModelMixin, mixins.ListModelMixin,
@@ -14,10 +14,12 @@ class UserFavViewset(mixins.CreateModelMixin, mixins.DestroyModelMixin, mixins.L
     """
     mixins.RetrieveModelMixin -> idを作る用
     お気に入り機能
+    list -> ユーザーお気に入りリスト取得
+    retrieve -> とある商品お気に入りかどうか
+    create -> 商品をお気に入り登録
     """
     # http://127.0.0.1:8000/userfavs/id/ method : DELETE 削除
     permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
-    serializer_class = UserFavSeriallzer
     authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
     lookup_field = "goods_id" # idをgoods_idに選択
 
@@ -26,4 +28,10 @@ class UserFavViewset(mixins.CreateModelMixin, mixins.DestroyModelMixin, mixins.L
         return UserFav.objects.filter(user=self.request.user)
     # ログインしてるかの判断
     # https://www.django-rest-framework.org/api-guide/permissions/#allowany  # IsAuthenticated
+    def get_serializer_class(self):
+        if self.action == "list":
+            return UserFavDetailSerializer
+        elif self.action == "create":
+            return UserFavSeriallzer
+        return UserFavSeriallzer
 
