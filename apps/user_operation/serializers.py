@@ -2,6 +2,8 @@ from rest_framework import serializers
 from rest_framework.validators import UniqueTogetherValidator
 
 from .models import UserFav
+from .models import UserLeavingMessage
+from .models import UserAddress
 from goods.serializers import GoodsSerializer
 
 
@@ -31,3 +33,26 @@ class UserFavSeriallzer(serializers.ModelSerializer):
         ]
 
         fields = ("user", "goods", "id")
+
+
+class LeavingMessageSerializer(serializers.ModelSerializer):
+    user = serializers.HiddenField(
+        default=serializers.CurrentUserDefault(),
+        help_text='ログインしてるユーザー'
+    )
+    add_time = serializers.DateTimeField(read_only=True, format='%Y-%m-%d %H:%M')
+    class Meta:
+       model = UserLeavingMessage
+       fields = ("user", "msg_type", "subject", "message", "file", "id", 'add_time')
+
+
+class AddressSerializer(serializers.ModelSerializer):
+    user = serializers.HiddenField(
+        default=serializers.CurrentUserDefault(),
+        help_text='ログインしてるユーザー'
+    )
+    add_time = serializers.DateTimeField(read_only=True, format='%Y-%m-%d %H:%M')
+    address = serializers.CharField(required=True, allow_blank=False, label="送り先")
+    class Meta:
+        model = UserAddress
+        fields = ("id", "user", "province", "city", "district", "address", "signer_name", 'add_time', 'signer_mobile')

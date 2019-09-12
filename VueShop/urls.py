@@ -27,9 +27,11 @@ from rest_framework.authtoken import views
 
 from goods.views import GoodsListViewSet, CategoryViewSet
 # お気に入り
-from user_operation.views import UserFavViewset
+from user_operation.views import UserFavViewset, LeavingMessageViewset, AddressViewset
 # user
 from users.views import UserViewset
+# ショッピングカート
+from trade.views import ShoppingCartViewset
 
 router = DefaultRouter()
 # goodsのurl設定
@@ -40,6 +42,12 @@ router.register('categorys', CategoryViewSet, base_name="categorys")
 router.register('userfavs', UserFavViewset, base_name="userfavs")
 # 新規ユーザー用
 router.register('user', UserViewset, base_name="users")
+# メッセージ
+router.register('message', LeavingMessageViewset, base_name="message")
+# 送り先
+router.register('address', AddressViewset, base_name="address")
+# ショッピングカート
+router.register("shopcarts", ShoppingCartViewset, base_name="shopcarts")
 
 # jwt認証
 from rest_framework_jwt.views import obtain_jwt_token
