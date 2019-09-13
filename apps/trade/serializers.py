@@ -18,7 +18,7 @@ class ShopCartSerializer(serializers.Serializer):
 
     def create(self, validated_data):
         user = self.context["request"].user
-        goods_num = validated_data["num"] # フロントエンド多分num使ってる
+        goods_num = validated_data["goods_num"] # フロントエンド多分num使ってる
         goods = validated_data["goods"]
 
         existed = ShoppingCart.objects.filter(user=user, goods=goods)
@@ -31,4 +31,10 @@ class ShopCartSerializer(serializers.Serializer):
             # 商品存在しなければ追加
             existed = ShoppingCart.objects.create(**validated_data)
         return existed
+
+    def update(self, instance, validated_data):
+        # 商品の数を修正
+        instance.goods_num = validated_data["goods_num"]
+        instance.save()
+        return instance
 
