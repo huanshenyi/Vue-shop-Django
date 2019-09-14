@@ -3,6 +3,14 @@ __author__ = "txy1226052@gmail.com"
 from rest_framework import serializers
 from goods.models import Goods
 from .models import ShoppingCart
+from goods.serializers import GoodsSerializer
+
+
+class ShopCartDetailSerializer(serializers.ModelSerializer):
+    goods = GoodsSerializer(many=False)
+    class Meta:
+        model = ShoppingCart
+        fields = "__all__"
 
 
 class ShopCartSerializer(serializers.Serializer):

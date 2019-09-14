@@ -5,7 +5,7 @@ from rest_framework.authentication import SessionAuthentication
 
 from .models import ShoppingCart
 from utils.permissions import IsOwnerOrReadOnly
-from .serializers import ShopCartSerializer
+from .serializers import ShopCartSerializer, ShopCartDetailSerializer
 
 
 class ShoppingCartViewset(viewsets.ModelViewSet):
@@ -21,6 +21,14 @@ class ShoppingCartViewset(viewsets.ModelViewSet):
     permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
     authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
     serializer_class = ShopCartSerializer
+    # 検索用のidをpkから指定したキーに変更します
+    lookup_field = "goods_id"  # https://blog.csdn.net/wu0che28/article/details/80981979
+
+    def get_serializer_class(self):
+        if self.action == "list":
+            return ShopCartDetailSerializer
+        else:
+            return ShopCartSerializer
 
     # 現在ユーザーのだけの返す
     def get_queryset(self):

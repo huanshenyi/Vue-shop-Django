@@ -73,7 +73,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../online-store" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -201,13 +201,6 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.serializers" />
-        <item itemvalue="Python.import_goods_data" />
-        <item itemvalue="Python.import_category_data" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
@@ -351,7 +344,9 @@
       <workItem from="1568206348742" duration="3638000" />
       <workItem from="1568286990055" duration="12886000" />
       <workItem from="1568376516479" duration="2271000" />
-      <workItem from="1568379903323" duration="579000" />
+      <workItem from="1568379903323" duration="987000" />
+      <workItem from="1568468849557" duration="1769000" />
+      <workItem from="1568472123788" duration="26000" />
     </task>
     <servers />
   </component>

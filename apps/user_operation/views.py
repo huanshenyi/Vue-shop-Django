@@ -68,8 +68,6 @@ class AddressViewset(viewsets.ModelViewSet):
     permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
     authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
     serializer_class = AddressSerializer
-    # 検索用のidをpkから指定したキーに変更します
-    lookup_field = "goods_id"  # https://blog.csdn.net/wu0che28/article/details/80981979
 
     def get_queryset(self):
         return UserAddress.objects.filter(user=self.request.user)
