@@ -54,6 +54,7 @@ class OrderInfo(models.Model):
     def __str__(self):
        return str(self.order_sn)
 
+
 class OrderGoods(models.Model):
     """
     注文の商品詳細

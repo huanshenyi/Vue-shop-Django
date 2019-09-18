@@ -32,6 +32,8 @@ from user_operation.views import UserFavViewset, LeavingMessageViewset, AddressV
 from users.views import UserViewset
 # ショッピングカート
 from trade.views import ShoppingCartViewset
+# オーダー
+from trade.views import OrderViewset
 
 router = DefaultRouter()
 # goodsのurl設定
@@ -48,6 +50,8 @@ router.register('message', LeavingMessageViewset, base_name="message")
 router.register('address', AddressViewset, base_name="address")
 # ショッピングカート
 router.register("shopcarts", ShoppingCartViewset, base_name="shopcarts")
+# オーダー
+router.register("order", OrderViewset, base_name="order")
 
 # jwt認証
 from rest_framework_jwt.views import obtain_jwt_token

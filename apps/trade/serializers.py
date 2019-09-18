@@ -1,8 +1,8 @@
 __author__ = "txy1226052@gmail.com"
-
+import time
 from rest_framework import serializers
 from goods.models import Goods
-from .models import ShoppingCart
+from .models import ShoppingCart, OrderInfo
 from goods.serializers import GoodsSerializer
 
 
@@ -45,4 +45,23 @@ class ShopCartSerializer(serializers.Serializer):
         instance.goods_num = validated_data["goods_num"]
         instance.save()
         return instance
+
+
+class OrderSerializer(serializers.ModelSerializer):
+    def generate_order_sn(self):
+        # オーダー番号:現在時間+user_id+ランダム数
+        from random import Random
+        time_str = time.strftime("%Y%m%d%H%M%S")
+        user_id = self.context["request"].user.id
+        random_ins = Random().randint(10, 99)
+        order_sn = f"{time_str}{user_id}{random_ins}"
+        return order_sn
+
+    def validate(self, attrs):
+        attrs["order_sn"] = self.generate_order_sn()
+        return attrs
+
+    class Meta:
+      model = OrderInfo
+      fields = "__all__"
 
