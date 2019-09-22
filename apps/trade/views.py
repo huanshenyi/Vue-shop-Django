@@ -7,7 +7,7 @@ from rest_framework import mixins
 
 from .models import ShoppingCart, OrderInfo, OrderGoods
 from utils.permissions import IsOwnerOrReadOnly
-from .serializers import ShopCartSerializer, ShopCartDetailSerializer, OrderSerializer
+from .serializers import ShopCartSerializer, ShopCartDetailSerializer, OrderSerializer, OrderDetailSerializer
 
 
 class ShoppingCartViewset(viewsets.ModelViewSet):
@@ -37,7 +37,8 @@ class ShoppingCartViewset(viewsets.ModelViewSet):
         return ShoppingCart.objects.filter(user=self.request.user)
 
 
-class OrderViewset(mixins.ListModelMixin, mixins.CreateModelMixin, mixins.DestroyModelMixin, viewsets.GenericViewSet):
+class OrderViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, mixins.CreateModelMixin, mixins.DestroyModelMixin,
+                   viewsets.GenericViewSet):
     """
     オーダー管理
     list:
@@ -54,13 +55,20 @@ class OrderViewset(mixins.ListModelMixin, mixins.CreateModelMixin, mixins.Destro
     def get_queryset(self):
         return OrderInfo.objects.filter(user=self.request.user)
 
+    def get_serializer_class(self):
+        # オーダー商品リストを表示
+        if self.action == "retrieve":
+            return OrderDetailSerializer
+        # オーダーを表示
+        return OrderSerializer
+
     def perform_create(self, serializer):
         order = serializer.save()
         shop_carts = ShoppingCart.objects.filter(user=self.request.user)
         for shop_cart in shop_carts:
             order_goods = OrderGoods()
             order_goods.goods = shop_cart.goods
-            order_goods.goods_num = shop_cart.nums
+            order_goods.goods_num = shop_cart.goods_num
             order_goods.order = order
             order_goods.save()
             shop_cart.delete()

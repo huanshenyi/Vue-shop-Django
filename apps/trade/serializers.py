@@ -2,7 +2,7 @@ __author__ = "txy1226052@gmail.com"
 import time
 from rest_framework import serializers
 from goods.models import Goods
-from .models import ShoppingCart, OrderInfo
+from .models import ShoppingCart, OrderInfo, OrderGoods
 from goods.serializers import GoodsSerializer
 
 
@@ -47,7 +47,30 @@ class ShopCartSerializer(serializers.Serializer):
         return instance
 
 
+class OrderGoodsSerialzier(serializers.ModelSerializer):
+    goods = GoodsSerializer(many=False)
+    class Meta:
+        model = OrderGoods
+        fields = "__all__"
+
+
+class OrderDetailSerializer(serializers.ModelSerializer):
+    goods = OrderGoodsSerialzier(many=True)
+
+    class Meta:
+        model = OrderInfo
+        fields = "__all__"
+
+
 class OrderSerializer(serializers.ModelSerializer):
+    user = serializers.HiddenField(
+        default=serializers.CurrentUserDefault()
+    )
+    pay_status = serializers.CharField(read_only=True)
+    trade_no = serializers.CharField(read_only=True)
+    order_sn = serializers.CharField(read_only=True)
+    pay_time = serializers.DateTimeField(read_only=True)
+
     def generate_order_sn(self):
         # オーダー番号:現在時間+user_id+ランダム数
         from random import Random
