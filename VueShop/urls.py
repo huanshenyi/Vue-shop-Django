@@ -25,7 +25,7 @@ from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken import views
 
 
-from goods.views import GoodsListViewSet, CategoryViewSet
+from goods.views import GoodsListViewSet, CategoryViewSet, HotSearChsViewset, BannerViewset
 # お気に入り
 from user_operation.views import UserFavViewset, LeavingMessageViewset, AddressViewset
 # user
@@ -52,6 +52,10 @@ router.register('address', AddressViewset, base_name="address")
 router.register("shopcarts", ShoppingCartViewset, base_name="shopcarts")
 # オーダー
 router.register("orders", OrderViewset, base_name="orders")
+# 人気キーワード
+router.register("hotsearchs", HotSearChsViewset, base_name="hotsearchs")
+# swiper画像
+router.register("banners", BannerViewset, base_name="banners")
 
 # jwt認証
 from rest_framework_jwt.views import obtain_jwt_token

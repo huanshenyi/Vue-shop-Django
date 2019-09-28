@@ -4,8 +4,8 @@ from rest_framework import filters
 from rest_framework.authentication import TokenAuthentication
 
 
-from .models import Goods, GoodsCategory
-from .serializers import GoodsSerializer, CategorySerializer
+from .models import Goods, GoodsCategory, HotSearchWords, Banner
+from .serializers import GoodsSerializer, CategorySerializer, HotWordsSerializer, BannerSerializer
 from rest_framework.pagination import PageNumberPagination
 from django_filters.rest_framework import DjangoFilterBackend
 from .filters import GoodsFilter
@@ -46,6 +46,22 @@ class CategoryViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets
     serializer_class = CategorySerializer
 
 
+class HotSearChsViewset(mixins.ListModelMixin, viewsets.GenericViewSet):
+     """
+     hot kwyword 取得
+     """
+     queryset = HotSearchWords.objects.all().order_by("-index")
+     serializer_class = HotWordsSerializer
+
+
+class BannerViewset(mixins.ListModelMixin, viewsets.GenericViewSet):
+    """
+    swipperの画像を取得
+    """
+    queryset = Banner.objects.all().order_by("index")
+    serializer_class = BannerSerializer
+
+
     # 内容のフィルター追加 -->古い方式
     # def get_queryset(self):
     #     # querysetはsqlを作っただけで、実際取得までに行ってない,データの多さに気にすることはない
@@ -64,5 +80,3 @@ class CategoryViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets
     # from rest_framework import status
     #         return Response(serializer.data, status=status.HTTP_201_CREATED)
     #     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
