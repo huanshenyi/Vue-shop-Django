@@ -5,7 +5,7 @@ from rest_framework.authentication import TokenAuthentication
 
 
 from .models import Goods, GoodsCategory, HotSearchWords, Banner
-from .serializers import GoodsSerializer, CategorySerializer, HotWordsSerializer, BannerSerializer
+from .serializers import GoodsSerializer, CategorySerializer, HotWordsSerializer, BannerSerializer,IndexCategorySerializer
 from rest_framework.pagination import PageNumberPagination
 from django_filters.rest_framework import DjangoFilterBackend
 from .filters import GoodsFilter
@@ -60,6 +60,14 @@ class BannerViewset(mixins.ListModelMixin, viewsets.GenericViewSet):
     """
     queryset = Banner.objects.all().order_by("index")
     serializer_class = BannerSerializer
+
+
+class IndexCategoryViewset(mixins.ListModelMixin, viewsets.GenericViewSet):
+    """
+    ホームページ商品カテゴリーデータ
+    """
+    queryset = GoodsCategory.objects.filter(is_tab=True)
+    serializer_class = IndexCategorySerializer
 
 
     # 内容のフィルター追加 -->古い方式
