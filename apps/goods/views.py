@@ -2,7 +2,7 @@ from rest_framework import mixins
 from rest_framework import viewsets
 from rest_framework import filters
 from rest_framework.authentication import TokenAuthentication
-
+from rest_framework.response import Response
 
 from .models import Goods, GoodsCategory, HotSearchWords, Banner
 from .serializers import GoodsSerializer, CategorySerializer, HotWordsSerializer, BannerSerializer,IndexCategorySerializer
@@ -35,6 +35,13 @@ class GoodsListViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewset
     # https://www.django-rest-framework.org/api-guide/filtering/#djangofilterbackend
     search_fields = ('name', 'goods_brief', 'goods_desc')
     ordering_fields = ('sold_num', 'shop_price')
+
+    def retrieve(self, request, *args, **kwargs):
+        instance = self.get_object()
+        instance.click_num += 1
+        instance.sava()
+        serializer = self.get_serializer(instance)
+        return Response(serializer.data)
 
 
 class CategoryViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
