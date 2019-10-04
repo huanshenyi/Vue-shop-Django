@@ -26,6 +26,27 @@ class ShoppingCartViewset(viewsets.ModelViewSet):
     # 検索用のidをpkから指定したキーに変更します
     lookup_field = "goods_id"  # https://blog.csdn.net/wu0che28/article/details/80981979
 
+    def perform_create(self, serializer):
+       shop_cart = serializer.save()
+       goods = shop_cart.goods
+       goods.goods_num -= shop_cart.goods_num
+       goods.save()
+
+    def perform_destroy(self, instance):
+        goods = instance.goods
+        goods.goods_num += instance.goods_num
+        goods.save()
+        instance.delete()
+
+    def perform_update(self, serializer):
+        existed_record = ShoppingCart.objects.get(id=serializer.instance.id)
+        existed_nums = existed_record.goods_num
+        saved_record = serializer.save()
+        nums = saved_record.goods_num - existed_nums
+        goods = saved_record.goods
+        goods.goods_num -= nums
+        goods.save()
+
     def get_serializer_class(self):
         if self.action == "list":
             return ShopCartDetailSerializer
