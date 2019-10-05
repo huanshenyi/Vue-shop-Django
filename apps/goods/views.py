@@ -2,6 +2,9 @@ from rest_framework import mixins
 from rest_framework import viewsets
 from rest_framework import filters
 from rest_framework.authentication import TokenAuthentication
+from rest_framework_extensions.cache.mixins import CacheResponseMixin
+# アクセス制限
+from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
 from rest_framework.response import Response
 
 from .models import Goods, GoodsCategory, HotSearchWords, Banner
@@ -22,10 +25,11 @@ class GoodsPagination(PageNumberPagination):
     # page_query_param = 'p'
 
 
-class GoodsListViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
+class GoodsListViewSet(CacheResponseMixin, mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     """
     商品リストページ,ページング，サーチ、フィルター，並び順
     """
+    throttle_classes = (UserRateThrottle, AnonRateThrottle)
     queryset = Goods.objects.all()
     serializer_class = GoodsSerializer
     pagination_class = GoodsPagination

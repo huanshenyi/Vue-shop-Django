@@ -191,7 +191,16 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
-    ]
+    ],
+    # アクセススピード制限
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.AnonRateThrottle', # 匿名ユーザーの場合 ipで判断
+        'rest_framework.throttling.UserRateThrottle' # tokenのセッションで判断
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '20/minute',
+        'user': '30/minute'
+    }
 }
 import datetime
 JWT_AUTH = {
@@ -203,3 +212,19 @@ REGEX_MOBILE = "^0\d{10}$"
 
 #ApiKey
 APIKEY = ""
+
+# DRF extensions timeout
+REST_FRAMEWORK_EXTENSIONS = {
+    'DEFAULT_CACHE_RESPONSE_TIMEOUT': 5
+}
+
+# redis caches
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": "redis://127.0.0.1:6379",
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#         }
+#     }
+# }
