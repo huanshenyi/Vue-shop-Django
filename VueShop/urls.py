@@ -73,5 +73,7 @@ urlpatterns = [
     # drf自分のtoken認証モード
     url(r'^api-token-auth/', views.obtain_auth_token),
     # jwt認証
-    url(r'^login/', obtain_jwt_token),
+    url(r'^login/$', obtain_jwt_token),
+    # 第三者サイトログイン
+    url('', include('social_django.urls', namespace='social'))
 ]
