@@ -159,6 +159,7 @@ AUTHENTICATION_BACKENDS = (
     'social_core.backends.qiita.QiitaOAuth2',
     'social_core.backends.qq.QQOAuth2',
     'social_core.backends.yahoo.YahooOpenId',
+    'social_core.backends.weibo.WeiboOAuth2',
     'users.views.CustomBackend', # 一般ログインがemailでも可能にする
     'django.contrib.auth.backends.ModelBackend',
 )
@@ -240,3 +241,14 @@ REST_FRAMEWORK_EXTENSIONS = {
 #         }
 #     }
 # }
+
+SOCIAL_AUTH_WEIBO_KEY = 'foobar'
+SOCIAL_AUTH_WEIBO_SECRET = 'bazqux'
+
+SOCIAL_AUTH_QQ_KEY = 'foobar'
+SOCIAL_AUTH_QQ_SECRET = 'bazqux'
+
+SOCIAL_AUTH_TWITTER_KEY = ""
+SOCIAL_AUTH_TWITTER_SECRET = ""
+# 第三者ログイン成功後リダイレクトするurl
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/index/'
